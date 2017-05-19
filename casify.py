@@ -35,7 +35,7 @@ def _sentence_case(sentence):
     words[0] = words[0].title()
     return " ".join(words)
 
-def main(name, data_dir=".", data_input="test.csv", data_output="casified_data.csv"):
+def main(name, data_dir=".", data_input="jr_data_engineer_assignment.csv", data_output="casified_data.csv"):
     filepath = os.path.join(data_dir, data_input)
     output = os.path.join(data_dir, data_output)
     resources = parse_csv(filepath)
